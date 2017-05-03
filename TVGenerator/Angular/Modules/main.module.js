@@ -1,1 +1,1 @@
-﻿var tvGeneratorApp = angular.module('tvGeneratorApp', []);
+﻿var tvGeneratorApp = angular.module('tvGeneratorApp', ['angularjs-dropdown-multiselect']);

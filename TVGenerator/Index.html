@@ -27,7 +27,12 @@
 
     <div id="mainArea">
         <!--<div ng-view></div>-->
-        <input type="button" value="Start" ng-click="startClick($event)" />
+        <label for="GenreDropdown">Genres</label>
+        <div id="GenreDropdown" ng-dropdown-multiselect="" options="genreOptions" selected-model="selectedGenres" checkboxes="true" extra-settings="defaultCheckboxSettings"></div>
+
+        <p>
+            <input type="button" value="Start" ng-click="startClick($event)" />
+        </p>
     </div>
 
     <script src="Content/Scripts/jquery.js"></script>
@@ -39,5 +44,7 @@
     <script src="Angular/Services/main.service.js"></script>
 
     <script src="Angular/Controllers/main.controller.js"></script>
+
+    <script src="Content/Scripts/angularjs-dropdown-multiselect.min.js"></script>
 </body>
 </html>

@@ -48,7 +48,7 @@ namespace TVGenerator.Data.Stores
                         ShowId = showId,
                         IsMovie = isMovie,
                         Runtime = GetNullableInt(row["Runtime"]),
-                        Genre = Convert.ToInt32(row["Genre"]),
+                        GenreId = Convert.ToInt32(row["GenreId"]),
                         Episodes = !isMovie ? GetEpisodesByShowId(showId) : new List<Episode>()
                     });
                 });

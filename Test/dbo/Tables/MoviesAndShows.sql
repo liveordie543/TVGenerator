@@ -3,7 +3,8 @@
     [ShowId]  INT           NOT NULL,
     [IsMovie] BIT           NOT NULL,
     [Runtime] INT           NULL,
-    [Genre]   INT           CONSTRAINT [DF_MoviesAndShows_Genre] DEFAULT ((0)) NOT NULL,
-    CONSTRAINT [PK_MoviesAndShows] PRIMARY KEY CLUSTERED ([ShowId] ASC)
+    [GenreId]   INT            NOT NULL,
+    CONSTRAINT [PK_MoviesAndShows] PRIMARY KEY CLUSTERED ([ShowId] ASC), 
+    CONSTRAINT [FK_MoviesAndShows_Genres] FOREIGN KEY ([GenreId]) REFERENCES [Genres]([Id])
 );
 

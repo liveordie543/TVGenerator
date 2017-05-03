@@ -3,7 +3,7 @@
         return $http({
             method: 'post',
             data: { IncludeMovies: includeMovies, IncludeShows: includeShows, GenreIds: genreIds },
-            url: 'api'
+            url: 'Media'
         });
     };
 
@@ -11,6 +11,13 @@
         return $http({
             method: 'get',
             url: 'Validate?id=' + id + '&name=' + name
+        });
+    };
+
+    this.getAvailableGenres = function () {
+        return $http({
+            method: 'get',
+            url: 'Genres'
         });
     };
 });

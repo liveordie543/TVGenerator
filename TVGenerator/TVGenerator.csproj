@@ -88,6 +88,7 @@
     <Content Include="Content\Scripts\angular-route.min.js" />
     <Content Include="Content\Scripts\angular.js" />
     <Content Include="Content\Scripts\angular.min.js" />
+    <Content Include="Content\Scripts\angularjs-dropdown-multiselect.min.js" />
     <Content Include="Content\Scripts\bootstrap.js" />
     <Content Include="Content\Scripts\bootstrap.min.js" />
     <Content Include="Content\Scripts\jquery.js" />

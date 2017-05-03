@@ -9,6 +9,7 @@ namespace TVGenerator.Controllers
     public class DataController : ApiController
     {
         [HttpPost]
+        [Route("Media")]
         public IHttpActionResult GetMoviesAndOrShows([FromBody]DataFilter filter)
         {
             return Ok(new MoviesAndShowsStore().GetMoviesAndShows(filter));
@@ -35,6 +36,13 @@ namespace TVGenerator.Controllers
             {
                 return NotFound();
             }
-        } 
+        }
+
+        [HttpGet]
+        [Route("Genres")]
+        public IHttpActionResult GetAvailableGenres()
+        {
+            return Ok(new GenresStore().GetGenreOptions());
+        }
     }
 }

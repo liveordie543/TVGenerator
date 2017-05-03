@@ -69,9 +69,10 @@
   <ItemGroup>
     <Build Include="dbo\Tables\MoviesAndShows.sql" />
     <Build Include="dbo\Tables\Episodes.sql" />
-    <Build Include="dbo\Tables\Version.sql" />
     <Build Include="dbo\Programmability\Stored Procedures\GetEpisodesByShowId.sql" />
     <Build Include="dbo\Programmability\Stored Procedures\GetMoviesAndShows.sql" />
+    <Build Include="dbo\Tables\Genres.sql" />
+    <Build Include="dbo\Programmability\Stored Procedures\GetGenres.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Script.PostDeployment.sql" />

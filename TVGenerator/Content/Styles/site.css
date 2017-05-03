@@ -21,3 +21,7 @@ table, tr, td, th {
     padding: 10px;
     margin: 10px;
 }
+
+.dropdown-menu > li > a {
+    cursor: pointer !important;
+}

@@ -17,7 +17,7 @@ namespace TVGenerator.Data.Models
 
         public int? Runtime { get; set; }
 
-        public int Genre { get; set; }
+        public int GenreId { get; set; }
 
         public IList<Episode> Episodes { get; set; }
     }
